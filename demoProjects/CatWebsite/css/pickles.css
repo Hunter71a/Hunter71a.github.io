@@ -1,0 +1,288 @@
+/* 
+ Carl Olson  HTML-1145
+ Home Page CSS form
+
+ with test items that have been 
+ commented out
+*/
+
+/*
+body {
+    backgroud-color:black;
+    color:black;
+}
+*/
+
+/* set wrapper on div over tiger background on body*/
+
+
+html {
+    height: 100%;
+    background-color: burlywood;
+    background: url("../img/tigerbackground.png") left top repeat;
+    background-size: 13vw, 13vw, auto;
+}
+
+@media only screen and (min-width: 1024px) {
+    #wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: 100%;
+        background-color: burlywood;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 100%;
+        background-color: burlywood;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.bg {
+    background-color: bisque;
+    height: auto;
+    overflow: auto;
+    padding-bottom: 3vw;
+}
+
+.clear {
+    clear: both;
+    margin: 0;
+}
+
+.hAlign {
+    margin-left: 18%;
+}
+
+.heroimage {
+    /* The image used */
+    background-image: url("../img/pickleshero.jpg");
+    /* Set a specific height */
+    height: 90%;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+
+.herotext {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    color: white;
+    font-size: 3vw;
+    text-shadow: 10px 10px 20px black;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    background-color: lightblue;
+}
+
+#mainblock {
+    border-left: 1px solid black;
+}
+
+nav ul {
+    list-style-type: none;
+    font-size: 2.5vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 3vw 2vw 1vw 1.4vw;
+    padding: 5%;
+    width: 80%;
+}
+
+nav p {
+    font-size: 1.5vw;
+    padding: 0.5em 2.0em 0.5em 0.0em;
+}
+
+.sidebar {
+    float: left;
+    width: 20%;
+    height: auto;
+    background-color: bisque;
+    position: relative;
+    text-align: center;
+    padding: 0%;
+}
+
+.stats {
+    text-align: left;
+    padding: 3% 10% 0% 0%;
+    margin: 0vw 0vw -3.7vw 0vw;
+    font-size: 1.5vw;
+}
+
+.stats img {
+    width: 40%;
+}
+
+.stats li {
+    margin-left: -3.5vw;
+    padding: 0.3vw;
+}
+
+.aside1 {
+    /* Position and center the image to scale nicely on all screens */
+    position: relative;
+    margin-top: 2vw;
+    margin-left: 1.0vw;
+    top: 40%;
+    right: 2%;
+    width: 90%;
+    font-size: 2.4vw;
+    text-align: center;
+    text-indent: 0.5vw;
+}
+
+.aside1 img {
+    width: 95%;
+    margin-left: 0;
+    padding: 0%;
+}
+
+.aside1 p {
+    font-size: 1.3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 5%;
+    width: 100%;
+    margin-left: 5%;
+    text-align: left;
+}
+
+main {
+    margin-left: 25%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.50vw;
+    background-color: burlywood;
+    margin: 0px;
+    border: 0px;
+    padding: 1% 7% 5% 5%;
+    overflow: auto;
+}
+
+main h1 {
+    margin-left: 5%;
+}
+
+.main {
+    padding: 2vw 2vw 1vw 2vw;
+    float: right;
+    width: 30vw;
+    border: 2px solid black;
+    margin: 0% 0% 3% 5%;
+}
+
+.main img {
+    width: 100%;
+    border: 10px black;
+}
+
+.column {
+    float: left;
+    width: 32%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#quickFacts {
+    padding: 2vw 4vw 8vw 0vw;
+    width: 100%;
+}
+
+#quickFacts h4 {
+    margin-left: 1vw;
+}
+
+#scary {
+    font-family: 'Times New Roman', Times, serif;
+    clear: both;
+    padding: 2vw 10vw 2vw 10vw;
+    border-top: 1px solid black;
+    font-size: 1.7vw;
+}
+
+#biohazard {
+    float: right;
+    width: 30%;
+    padding: 5%;
+}
+
+#jaguar {
+    float: left;
+    width: 55%;
+    padding: 0% 5% 5% 0%;
+}
+
+footer {
+    border-top: 1px solid black;
+    margin-top: 0;
+    background-color: burlywood;
+    font-size: 1.5vw;
+    padding: 1vw;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    clear: both;
+}
+
+.textnav a:hover {
+    background-color: deepskyblue
+}
+
+.textnav li {
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.textnav ul {
+    list-style: none;
+    background-color: bisque;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.valid {
+    width: 7vw;
+    float: right;
+    margin-right: 8vw;
+    margin-left: -15vw;
+}

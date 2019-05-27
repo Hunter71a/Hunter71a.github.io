@@ -1,0 +1,191 @@
+<!--Carl Olson-->
+<!--CSCI-1145: HTML-->
+<!--Project 8-->
+<!--2018.07.25-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>
+        Contact Us
+    </title>
+    <meta name="description" content="Funny cat stories and interesting cat facts. Trivia about cats meant to 
+    amuse and educate. Animal welfare advocacy and volunteer oportunities. Historical Egyptian cat culture.">
+    <meta name="keywords" content="Cat, Cats, Cow, Funny, Animal, Orange, Black, Tuxedo, Toxoplasmosis, 
+    Vikings, Freud, Spotted, meme">
+    <meta name="author" content="Carl Olson">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img/faviconpaw.png">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+
+<body ID="wrapper">
+
+    <header class="heroimage">
+        <div class="herotext">
+
+            <h1>
+                Contact Us
+            </h1>
+            <p></p>
+            <!-- <button>help me</button>   -->
+        </div>
+    </header>
+
+    <div class="bg">
+        <div class="sidebar">
+            <div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="charlie.html">Charlie</a>
+                        </li>
+                        <li>
+                            <a href="moose.html">Moose</a>
+                        </li>
+                        <li>
+                            <a href="pickles.html">Pickles</a>
+                        </li>
+                        <li>
+                            <a href="jack.html">Jack</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="aside1">
+                        <p>
+                            "Time spent with cats is never wasted" - Sigmund Freud
+                        </p>
+                        <img src="img/freud4.jpg" alt="Freud smoking a cigar">
+                        <p>". . . I can't say the same about websites."</p>
+                        <!-- <img src="img/moose_mew.jpg"-->
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <main id="mainblock">
+            <div class="bibliography">
+                <h1 class="headingElement">Thank You</h1>
+                <p>Our hope is that you had some amusement and learned some new odd facts. At the very least, most will step
+                    up their hand-washing after touching cats.</p>
+                <p> A short list of references follows. However, some information presented is speculative in nature.
+                </p>
+                <p class="headingElement">Bibliography</p>
+                <ul>
+                    <li>
+                        Bessant, Clair.
+                        <em>Cat - The Complete Guide. </em> New York: Barnes and Nobel, 1999.
+                    </li>
+                    <li>Dierderichs, Gillis.
+                        <em> Purr: A Cat Therapy Guide to Happiness. </em> New York: HarperCollins, 2017.</li>
+                    <li>Poirotte, et al. "Morbid attraction to leapard urine in
+                        <em> Toxoplasma </em> infected chimpanzees,"
+                        <em>Current Biology </em>
+                        26, no. 3 (2016), R98-R99.</li>
+                    <li>
+                        Tucker, Abigail.
+                        <em>The Lion in the Living Room.</em> New York: Simon &amp; Shuster 2016.
+                    </li>
+                    <li>
+                        <a href="https://www.edge.org/conversation/robert_sapolsky-toxo" id="SapolkyToxoEdge" target="blank">https://www.edge.org/conversation/robert_sapolsky-toxo "Toxo, A Conversation with Robert Sapolsky,"
+                            Edge, (2009).</a>
+                    </li>
+                    <li>
+                        <a href="https://www.psychologytoday.com/us/blog/the-superhuman-mind/201302/how-smart-is-your-cat-1" id="psychologytoday"
+                            target="blank">https://www.psychologytoday.com/us/blog/the-superhuman-mind/201302/how-smart-is-your-cat-1></a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="blog">
+                <h2 class="headingElement">Get Involved</h2>
+                <p>Moose was adopted from the Capital Area Humane Society, which recently changed names to Columbus Humane.
+                    This is a great non-profit organization founded in 1957 whose mission statement is: "To fight animal
+                    cruelty, help animals in need, and advocate for their well-being." They care for and find homes for cats,
+                    dogs, rabbits, ferrets, and more. If you want to help, follow the link to donate time or money to help
+                    animals.
+                </p>
+                <p>
+                    You could get trained to be a dog-walker if you want some animal interaction but not actually adopt. Further, it's a great
+                    place to adopt from because of the high level of cleanliness of the facility and professionalism of the
+                    staff. Cats are kept in individual cages, and visitors must wash their hands between interacting with
+                    individual animals. This means the cats are healthy and not ravaged by upper respitory infections and
+                    feline herpes the way they sometimes are at no-kill shelters where overcrowded cats mill around together
+                    in stressful and germy environments run by hippies. </p>
+                <a href="http://www.cahs-pets.org/" id="ColumbusHumane" target="blank">Columbus Humane &nbsp;(http://www.cahs-pets.org)
+                </a>
+            </div>
+            <br class="clear">
+            <div class="contact">
+                <h2 class="headingElement">Contact Us</h2>
+                <p>
+                    Thank you for visiting. If you care to send a message or let us know how we're doing, we'd love to hear from you. Please
+                    rate your enjoyment from 1 to 10.</p>
+                <p class="note">Required fields marked with an asterisk *</p>
+                <form name="contactUs" method="post" action="http://webdevbasics.net/scripts/demo.php">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                    <br>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                    <br>
+                    <label for="myEmail">*Email:</label>
+                    <input type="email" name="myEmail" id="myEmail" required="required">
+                    <br>
+                    <label for="rating">Rating (1 - 10):</label>
+                    <input type="range" name="rating" id="rating" min="1" max="10">
+                    <br>
+                    <label for="myComments">*Comments:</label>
+                    <br>
+                    <textarea name="myComments" id="myComments" rows="2" cols="20" required="required"></textarea>
+                    <br>
+                    <label for="signMeUp">Sign me up for cat newsletter</label>
+                    <input type="checkbox" name="signMeUp" id="signMeUp" checked>
+                    <br>
+                    <input id="submit" type="submit" value="Submit">
+                </form>
+            </div>
+
+        </main>
+    </div>
+    <footer>
+        <div class="textnav">
+            <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="charlie.html">Charlie</a>
+                </li>
+                <li>
+                    <a href="moose.html">Moose</a>
+                </li>
+                <li>
+                    <a href="pickles.html">Pickles</a>
+                </li>
+                <li>
+                    <a href="jack.html">Jack</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img class="valid" src="img/vcss.gif" alt="Valid CSS!">
+            </a>
+        </p>
+        <p> Tales of Four Cats by Carl Olson &COPY; 2018
+            <p>
+    </footer>
+</body>
+
+</html>
