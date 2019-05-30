@@ -1,4 +1,4 @@
- {
+* {
     box-sizing: border-box;
 }
 
@@ -11,7 +11,7 @@ header, main, nav.footer, section, article, figure, figcaption, aside {
 html {
     height: 100%;
     background-color: burlywood;
-    background-image: url("../img/cowbackground.jpg");
+   
 }
 @media only screen and (min-width: 1024px) {  #wrapper {
     margin-left: auto;
