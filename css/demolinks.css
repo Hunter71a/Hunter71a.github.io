@@ -11,27 +11,134 @@ header, main, nav.footer, section, article, figure, figcaption, aside {
 html {
     height: 100%;
     background-color: burlywood;
-   
 }
-@media only screen and (min-width: 1024px) {  #wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    height: 100%;
-    background-color: burlywood;
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+@media only screen and (max-width: 68.75em) {
+    html {
+        font-size: 50%;
     }
 }
 
-@media only screen and (max-width: 1024px) {  #wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+.background {
+    display: block;
     height: 100%;
-    background-color: burlywood;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
+    opacity: .4;
+}
+
+
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #655A56;
+    background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 2 * 4vw);
+}
+
+@media only screen and (min-width: 1024px) {
+    #wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: 100%;
+        background-color: burlywood;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 100%;
+        background-color: burlywood;
     }
 }
 
 .background {
     background-color: bisque;
     height: auto;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 4vw auto;
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2rem 6rem 0.5rem rgba(101, 90, 86, 0.2);
+    display: grid;
+    grid-template-rows: 10rem minmax(100rem, auto);
+    grid-template-columns: 1.1fr 2fr 1.1fr;
+    grid-template-areas: "head head head" "list recipe shopping";
+}
+
+.list_container {
+    align-items: right;
+}
+
+.list_item {
+    font: outline;
+    font-size: 1.7rem;
+    height: 2.3rem;
+    align-self: center;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.list_container>a {
+    text-decoration: none;
+}
+
+.list_item>li>a {
+    text-decoration: none;
+}
+
+.list_item:hover {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media only screen and (max-width: 68.75em) {
+    .container {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
+.header_logo {
+    max-height: 13rem;
+}
+
+.subheader {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: rgb(141, 4, 15);
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    transform: skewY(-3deg);
 }
